@@ -17,13 +17,19 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  var newArray = [... kittens];
-  newArray = newArray.push(name);
+  var newArray = [...kittens];
+  newArray.push(name);
   return newArray;
 }
 
+// function appendKitten(name) {
+//   var newKittens = [...kittens];
+//   newKittens.push(name);
+//   return newKittens;
+//  }
+
 function prependKitten(name) {
-  var newArray = [... kittens];
-  newArray = newArray.unshift(name);
+  var newArray = [...kittens];
+  newArray.unshift(name);
   return newArray;
 }
